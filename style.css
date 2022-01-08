@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+.logo{
+    margin: 20px;
+    cursor: pointer;
+}
+nav{
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu{
+    display: flex;
+    margin: 30px;
+}
+.nav-item{
+    list-style: none;
+
+}
+.nav-link{
+    text-decoration: none;
+    padding: 1rem;
+    text-transform: capitalize;
+    color: #2A0000;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.nav-link:hover{
+    background-color: #DDDDDD;
+}
+.logo img:hover{
+    background-color: #DDDDDD;
+}
+
+.hamburger{
+    position: absolute;
+    display: flex;
+    top: 5px;
+    right: 1rem;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 30px;
+    height: 21px;
+    margin-top: 27px;
+    cursor: pointer;
+    display: none;
+}
+.bar{
+    width: 100%;
+    height: 3px;
+    background-color: #2A0000;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width:815px){
+    .nav-menu{
+        display: none;
+        width: 100%;
+       
+    }
+    .hamburger{
+        display: flex;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity:0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+        transition: all 1s ease-in;
+        
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+        transition: all 1s ease-in;
+    }
+
+    nav{ 
+        flex-direction: column;
+        align-items: flex-start;
+       
+    }
+    
+    .nav-menu{
+        flex-direction: column;
+        width: 94%;
+    }
+
+    .nav-item{
+        text-align: center;
+        margin: 20px;
+    }
+    .nav-link a{
+        padding: .5rem 1rem;
+    }
+    .nav-menu.active{
+        display: flex;
+    }
+    .nav-menu.active{
+        right: 0;
+    }
+
+}
+
+.infos h1{
+   
+   font-weight: bolder;
+  text-align: center;
+  color: white;
+  padding-bottom: 20px;
+  padding-top: 190px;
+ 
+}
+.infos p{
+    text-align: center;
+  padding-bottom: 30px;
+    color: #777777;
+}
+.infos button{
+    margin: 0 auto;
+    display: block;
+    padding: 15px;
+    border: none;
+    background-color: #3392EA;
+    color: white;
+    cursor: pointer;
+}
+.infos button:hover{
+    transition: all 0.5s ease-in;
+    transform: translateY(-15px);
+}
+
+#section1{
+    background-color: #3d5a80;
+    background-image: url(img/banner.jpg);
+    background-size: cover;
+    height: 80vh;
+}
+
+@media screen and (max-width:815px){
+    .infos h1{text-align: center;}
+    .infos p{text-align: center;}
+    .infos button{margin: 0 auto; display: block;}
+    #section1 img{margin: 0 auto; display: block;}
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    text-align: center;
+    margin: 20px;
+}
+.box img{
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 15px;
+}
+.box p{
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width:815px){
+    .parent{flex-wrap: wrap;}
+}
+#section2 hr{
+    height: 4px;
+}
+
+.parent1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1 img{
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+    padding-bottom: 20px;
+}
+.box1{
+    margin: 20px;
+    text-align: center;
+}
+.box1 h2{
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+.box1 span{
+    font-size: 12px;
+    padding-bottom: 15px;
+
+}
+#section4{
+    height: 29vh;
+}
+
+@media screen and (max-width:815px){
+    .parent1{
+        flex-wrap: wrap;
+    }
+}
+
+#section4{
+    background-color: #E5E5E5;
+    
+}
+#section4 img{
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 15px;
+}
+#section4 h1{
+    text-align: center;
+    font-size: 20px;
+}
+
+.parent2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box2 ul li{
+    list-style: none;
+    width: 90%;
+}
+.box2 p{
+    font-weight: bolder;
+    padding-bottom: 20px;
+}
+footer{background-color: #202020; color: #4E4E4E;}
+
+.box2{
+    margin:40px;
+
+}
+
+@media screen and (max-width:815px){
+    .parent2{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .bo{
+        margin-left: 130px;
+    }
+}
